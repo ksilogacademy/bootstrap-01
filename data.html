@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4 col-8">
+        <form action="" class="form">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>Formulaire d'accueil</h4>
+                </div>
+                <div class="card-body">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" class="form-control" id="nom">
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="col-4">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="col-4">
+                            <label for="quartier">Quartier</label>
+                            <input type="text" class="form-control" id="quartier">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <select name="" id="" class="form-control mt-2">
+                                <option value="">votre pays</option>
+                                <option value="">senegal</option>
+                                <option value="">France</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <select name="" id="" class="form-control mt-2">
+                                <option value="">votre Ville</option>
+                                <option value="">Dakar</option>
+                                <option value="">Paris</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="livraison">
+                        <label for="livraison" class="form-label">Livraison</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="checkIndeterminate">
+                        <label for="checkIndeterminate" class="form-label">Livraison</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="checkIndeterminate" checked>
+                        <label for="checkIndeterminate" class="form-label">Livraison</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="checkIndeterminate">
+                        <label for="checkIndeterminate" class="form-label">Livraison</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="checkIndeterminate" checked>
+                        <label for="checkIndeterminate" class="form-label">Livraison</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="checkIndeterminate" role="switch">
+                        <label for="checkIndeterminate" class="form-label">Livraison</label>
+                    </div>
+                    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#ff3a7c"
+                        title="Choose your color">
+                    <label for="exampleColorInput form-ckeck" class="form-label">Code de couleur</label>
+                    <textarea name="" id="" class="form-control my-3" rows="2"></textarea>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <span class="input-group-text" id="basic-addon1">€</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1">AT</span>
+                        <span class="input-group-text" id="basic-addon1">£</span>
+                    </div>
+                    <label for="customRange3" class="form-label">Niveau</label>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                    <form class="form-floating">
+                        <input type="email" class="form-control is-invalid" id="floatingInputInvalid"
+                            placeholder="contact@ksilogacademy.com" value="contact@ksilogacademy.com">
+                        <label for="floatingInputInvalid " class="text-danger">Champs invalide</label>
+                    </form>
+                    <button class="btn btn-outline-success w-100 my-3">Soumettre</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="container my-4">
+        <h1>LES DATASET</h1>
+        <a href="#voir" class="btn btn-outline-success" data-bs-toggle="collapse">Afficher</a>
+        <div class="card my-4 collapse border-success" id="voir">
+            <div class="card-body ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sequi consequuntur, iste eum
+                    suscipit corporis ipsam minus voluptates soluta quo quos ut commodi repudiandae delectus blanditiis
+                    dolorum exercitationem est dolore?</p>
+            </div>
+        </div>
+
+        <button data-bs-target="#voi" class="btn btn-outline-info" data-bs-toggle="collapse">Voir plus</button>
+        <div class="card my-4 collapse border-success" id="voi">
+            <div class="card-body ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sequi consequuntur, iste eum
+                    suscipit corporis ipsam minus voluptates soluta quo quos ut commodi repudiandae delectus blanditiis
+                    dolorum exercitationem est dolore?</p>
+            </div>
+        </div>
+
+        <h4 class="mt-4">BOITE de diaglog</h4>
+        <button data-bs-target="#dialog" class="btn btn-outline-primary" data-bs-toggle="modal">commande</button>
+        <div class="modal" id="dialog">
+            <div class="modal-dialog bg-info">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h5>Titre</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab vero porro ea dolorum iure, unde
+                            hic iste voluptatum dignissimos doloribus molestias excepturi, atque eos officiis voluptatem
+                            amet quae similique officia.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">confirmer</button>
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown my-3">
+            <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Menu deroulant</button>
+            <ul class="dropdown-menu bg-primary text-white">
+                <li class="drop-item">Accueil</li>
+                <li class="drop-item">Contact</li>
+                <li class="drop-item">A prpos</li>
+            </ul>
+        </div>
+
+        <h4>OFFCanvas</h4>
+
+        <button class="btn btn-outline-warning " data-bs-toggle="offcanvas" data-bs-target="#side">sidebar</button>
+        <div class="offcanvas offcanvas-start" id="side">
+            <div class="offcanvas-header">
+                <h5>Titre</h5>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="dropdown my-3">
+                    <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Menu
+                        deroulant</button>
+                    <ul class="dropdown-menu bg-primary text-white">
+                        <li class="drop-item">Accueil</li>
+                        <li class="drop-item">Contact</li>
+                        <li class="drop-item">A prpos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel" data-bs-ride="carousel" data-bs-interval="1000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="montre.jpg" alt="" class="d-flex w-75">
+                </div>
+                <div class="carousel-item active">
+                    <img src="ksilog-academy-logo.png" alt="" class="d-flex w-75">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
